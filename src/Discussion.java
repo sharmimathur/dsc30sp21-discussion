@@ -3,7 +3,7 @@ public class Discussion {
     // State / Instance Variables
     // IMPORTANT: must declare instance variables out here to be used in whole class
 
-    int x = 0;
+    int x;
     // x = 0;
 
     static int y = 0;
@@ -21,16 +21,23 @@ public class Discussion {
     public static void main(String[] args) {
         System.out.println("hi");
 
-        // System.out.println(Discussion.sample(1, 1));
-        Discussion.test();
-        Discussion.test();
+        System.out.println(Discussion.sample(1, 1));
+        // Discussion.test();
+        // Discussion.test();
 
 
-        //Discussion d = new Discussion("discussion1");
+        // Discussion d = new Discussion("discussion1");
     }
 
+
     // Here is a sample method
+
     /** Showing off some fun java stuff */
+
+
+    /**
+     *
+     */
     public static void test() {
 
 
@@ -42,12 +49,14 @@ public class Discussion {
 
         // This is an inline comment
 
-        int[] lst = {1,2,3,4,5};
+        int[] lst0 = new int[5];
 
+        int[] lst = {1,2,3,4,5};
 
 
         for (int num: lst) {
             // whatever code here
+            System.out.println(num);
         }
 
 
@@ -88,6 +97,15 @@ public class Discussion {
 
     }
 
+
+    /**
+     *
+     * Adds two numbers together
+     *
+     * @param a first number
+     * @param b second number
+     * @return sum of a and b
+     */
     public static int sample(int a, int b) {
 
         return a + b;
